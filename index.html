@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancelar Assinatura Spotify - Guia Completo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo-section">
+                <img src="assets/images/spotify-icon.png" alt="Spotify" class="logo-icon">
+                <h1>Cancelar Assinatura Spotify</h1>
+            </div>
+            <nav class="nav">
+                <a href="#processo" class="nav-link">Como Cancelar</a>
+                <a href="#cancelamento" class="nav-link">Cancelar Agora</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#ajuda" class="nav-link">Ajuda</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2 class="hero-title">Cancelar sua Assinatura Spotify</h2>
+                    <p class="hero-subtitle">Processo simples e rápido. Você não perderá suas playlists e músicas salvas.</p>
+                    <div class="hero-buttons">
+                        <a href="#cancelamento" class="btn btn-primary">Iniciar Cancelamento</a>
+                        <a href="#alternativas" class="btn btn-secondary">Ver Alternativas</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/images/spotify-logo.png" alt="Spotify Logo" class="spotify-logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Informações Importantes -->
+    <section class="info-section">
+        <div class="container">
+            <h3 class="section-title">O que acontece após o cancelamento?</h3>
+            <div class="info-grid">
+                <div class="info-card">
+                    <img src="assets/images/check-icon.png" alt="Check" class="info-icon">
+                    <h4>Suas músicas ficam salvas</h4>
+                    <p>Todas as suas playlists e músicas salvas permanecerão na sua conta.</p>
+                </div>
+                <div class="info-card">
+                    <img src="assets/images/check-icon.png" alt="Check" class="info-icon">
+                    <h4>Premium até a próxima cobrança</h4>
+                    <p>Você continuará com os benefícios Premium até a data da próxima cobrança.</p>
+                </div>
+                <div class="info-card">
+                    <img src="assets/images/check-icon.png" alt="Check" class="info-icon">
+                    <h4>Mudança para versão gratuita</h4>
+                    <p>Após o cancelamento, sua conta mudará automaticamente para a versão gratuita com anúncios.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Processo de Cancelamento Simulado -->
+    <section id="cancelamento" class="cancellation-section">
+        <div class="container">
+            <h3 class="section-title">Cancelar Assinatura</h3>
+            <div class="cancellation-wizard">
+                <!-- Etapa 1: Informações da Conta -->
+                <div class="wizard-step active" id="step1">
+                    <div class="step-header">
+                        <div class="step-indicator">
+                            <span class="step-number">1</span>
+                            <span class="step-title">Informações da Conta</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 33%"></div>
+                        </div>
+                    </div>
+                    <div class="step-content">
+                        <div class="account-info">
+                            <h4>Confirme suas informações</h4>
+                            <div class="account-details">
+                                <div class="detail-item">
+                                    <span class="detail-label">Plano Atual:</span>
+                                    <span class="detail-value">Spotify Premium Individual</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Próxima Cobrança:</span>
+                                    <span class="detail-value">15 de Fevereiro, 2025</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Valor Mensal:</span>
+                                    <span class="detail-value">R$ 21,90</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary" onclick="nextStep(2)">Continuar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Etapa 2: Motivo do Cancelamento -->
+                <div class="wizard-step" id="step2">
+                    <div class="step-header">
+                        <div class="step-indicator">
+                            <span class="step-number">2</span>
+                            <span class="step-title">Motivo do Cancelamento</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 66%"></div>
+                        </div>
+                    </div>
+                    <div class="step-content">
+                        <h4>Por que você está cancelando?</h4>
+                        <div class="reason-options">
+                            <label class="reason-option">
+                                <input type="radio" name="cancellation-reason" value="preco">
+                                <div class="reason-card">
+                                    <h5>Preço muito alto</h5>
+                                    <p>O valor da assinatura não cabe no meu orçamento</p>
+                                </div>
+                            </label>
+                            <label class="reason-option">
+                                <input type="radio" name="cancellation-reason" value="uso">
+                                <div class="reason-card">
+                                    <h5>Não uso com frequência</h5>
+                                    <p>Não escuto música o suficiente para justificar o pagamento</p>
+                                </div>
+                            </label>
+                            <label class="reason-option">
+                                <input type="radio" name="cancellation-reason" value="alternativa">
+                                <div class="reason-card">
+                                    <h5>Encontrei uma alternativa</h5>
+                                    <p>Vou usar outro serviço de streaming</p>
+                                </div>
+                            </label>
+                            <label class="reason-option">
+                                <input type="radio" name="cancellation-reason" value="tecnico">
+                                <div class="reason-card">
+                                    <h5>Problemas técnicos</h5>
+                                    <p>Tenho dificuldades com o aplicativo ou serviço</p>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="step-buttons">
+                            <button class="btn btn-secondary" onclick="prevStep(1)">Voltar</button>
+                            <button class="btn btn-primary" onclick="nextStep(3)" id="continueStep2" disabled>Continuar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Etapa 3: Taxa de Cancelamento -->
+                <div class="wizard-step" id="step3">
+                    <div class="step-header">
+                        <div class="step-indicator">
+                            <span class="step-number">3</span>
+                            <span class="step-title">Taxa de Cancelamento</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div class="step-content">
+                        <div class="cancellation-fee">
+                            <div class="fee-notice">
+                                <div class="fee-icon">⚠️</div>
+                                <h4>Taxa de Cancelamento Antecipado</h4>
+                                <p>Para cancelamentos antes do término do período de faturamento, aplicamos uma taxa administrativa.</p>
+                            </div>
+                            
+                            <div class="fee-breakdown">
+                                <div class="fee-item">
+                                    <span class="fee-label">Valor restante do período:</span>
+                                    <span class="fee-value">R$ 14,60</span>
+                                </div>
+                                <div class="fee-item">
+                                    <span class="fee-label">Taxa administrativa:</span>
+                                    <span class="fee-value">R$ 9,90</span>
+                                </div>
+                                <div class="fee-item total">
+                                    <span class="fee-label">Total da taxa de cancelamento:</span>
+                                    <span class="fee-value">R$ 24,50</span>
+                                </div>
+                            </div>
+
+                            <div class="payment-info">
+                                <h5>Forma de Pagamento</h5>
+                                <div class="payment-method">
+                                    <div class="card-info">
+                                        <span class="card-icon">💳</span>
+                                        <span class="card-details">Cartão terminado em 4532</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="terms-agreement">
+                                <label class="checkbox-option">
+                                    <input type="checkbox" id="agreeTerms">
+                                    <span class="checkmark"></span>
+                                    <span class="checkbox-text">Concordo com os termos de cancelamento e autorizo a cobrança da taxa</span>
+                                </label>
+                            </div>
+
+                            <div class="step-buttons">
+                                <button class="btn btn-secondary" onclick="prevStep(2)">Voltar</button>
+                                <button class="btn btn-danger" onclick="confirmCancellation()" id="confirmCancel" disabled>Confirmar Cancelamento</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Etapa 4: Confirmação -->
+                <div class="wizard-step" id="step4">
+                    <div class="step-header">
+                        <div class="step-indicator">
+                            <span class="step-number">✓</span>
+                            <span class="step-title">Cancelamento Confirmado</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div class="step-content">
+                        <div class="confirmation-message">
+                            <div class="success-icon">✅</div>
+                            <h4>Assinatura Cancelada com Sucesso</h4>
+                            <p>Sua assinatura foi cancelada e a taxa de cancelamento foi processada.</p>
+                            
+                            <div class="confirmation-details">
+                                <div class="detail-item">
+                                    <span class="detail-label">Data do Cancelamento:</span>
+                                    <span class="detail-value" id="cancellationDate"></span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Taxa Cobrada:</span>
+                                    <span class="detail-value">R$ 24,50</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Acesso Premium até:</span>
+                                    <span class="detail-value">15 de Fevereiro, 2025</span>
+                                </div>
+                            </div>
+
+                            <div class="next-steps">
+                                <h5>Próximos Passos:</h5>
+                                <ul>
+                                    <li>Você receberá um e-mail de confirmação em breve</li>
+                                    <li>Suas playlists e músicas salvas permanecerão intactas</li>
+                                    <li>Após 15/02/2025, sua conta mudará para a versão gratuita</li>
+                                    <li>Você pode reativar sua assinatura a qualquer momento</li>
+                                </ul>
+                            </div>
+
+                            <button class="btn btn-primary" onclick="window.location.reload()">Finalizar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Processo Passo a Passo -->
+    <section id="processo" class="process-section">
+        <div class="container">
+            <h3 class="section-title">Como cancelar em 3 passos simples</h3>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Acesse sua conta</h4>
+                        <p>Vá para a <a href="https://www.spotify.com/account/" target="_blank" class="link">página da sua conta Spotify</a> e faça login.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Encontre "Cancelar plano"</h4>
+                        <p>Procure pela opção "Cancelar plano" na seção "Seu plano" ou "Gerenciar seu plano".</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Confirme o cancelamento</h4>
+                        <p>Siga as etapas até ver a mensagem de confirmação do cancelamento.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="process-cta">
+                <a href="#cancelamento" class="btn btn-primary">Usar Nosso Simulador</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alternativas -->
+    <section id="alternativas" class="alternatives-section">
+        <div class="container">
+            <h3 class="section-title">Considere essas alternativas antes de cancelar</h3>
+            <div class="alternatives-grid">
+                <div class="alternative-card">
+                    <h4>Mudar de Plano</h4>
+                    <p>Que tal um plano mais barato? Considere o Spotify Individual ou Student.</p>
+                    <a href="https://www.spotify.com/premium/" target="_blank" class="btn btn-outline">Ver Planos</a>
+                </div>
+                <div class="alternative-card">
+                    <h4>Pausar Assinatura</h4>
+                    <p>Algumas regiões permitem pausar a assinatura por um período determinado.</p>
+                    <a href="https://support.spotify.com" target="_blank" class="btn btn-outline">Saiba Mais</a>
+                </div>
+                <div class="alternative-card">
+                    <h4>Resolver Problemas</h4>
+                    <p>Está com algum problema técnico? Nossa equipe de suporte pode ajudar.</p>
+                    <a href="https://support.spotify.com" target="_blank" class="btn btn-outline">Contatar Suporte</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feedback -->
+    <section class="feedback-section">
+        <div class="container">
+            <h3 class="section-title">Conte-nos o motivo do cancelamento</h3>
+            <p class="section-subtitle">Seu feedback nos ajuda a melhorar o serviço</p>
+            <form class="feedback-form" id="feedbackForm">
+                <div class="form-group">
+                    <label class="form-label">Por que você está cancelando?</label>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="reason" value="preco">
+                            <span class="radio-text">Preço muito alto</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="reason" value="uso">
+                            <span class="radio-text">Não uso com frequência</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="reason" value="alternativa">
+                            <span class="radio-text">Encontrei uma alternativa</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="reason" value="tecnico">
+                            <span class="radio-text">Problemas técnicos</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="reason" value="outro">
+                            <span class="radio-text">Outro motivo</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="comments" class="form-label">Comentários adicionais (opcional)</label>
+                    <textarea id="comments" name="comments" class="form-textarea" placeholder="Compartilhe mais detalhes..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar Feedback</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <h3 class="section-title">Perguntas Frequentes</h3>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>Posso reativar minha assinatura depois?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim! Você pode reativar sua assinatura Premium a qualquer momento. Basta acessar sua conta e escolher um novo plano.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>Vou perder minhas playlists?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Não! Todas as suas playlists, músicas salvas e histórico de reprodução permanecerão na sua conta, mesmo na versão gratuita.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>Por que há uma taxa de cancelamento?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>A taxa de cancelamento antecipado cobre custos administrativos e de processamento quando o cancelamento ocorre antes do fim do período de faturamento.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>Quando a cobrança para?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>A cobrança para imediatamente após o cancelamento. Você continuará com os benefícios Premium até a próxima data de renovação.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>Como cancelo planos Família ou Duo?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Se você é o administrador do plano, siga os mesmos passos. Se você é membro, apenas sua conta sairá do plano - o administrador precisa cancelar o plano completo.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>E se não consigo encontrar a opção de cancelamento?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Isso pode significar que seu plano está vinculado a uma operadora ou empresa parceira. Neste caso, você precisa cancelar diretamente com eles.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="ajuda" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Links Úteis</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://support.spotify.com" target="_blank">Suporte Spotify</a></li>
+                        <li><a href="https://www.spotify.com/account/" target="_blank">Minha Conta</a></li>
+                        <li><a href="https://www.spotify.com/premium/" target="_blank">Planos Premium</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Precisa de Ajuda?</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://support.spotify.com/contact/" target="_blank">Contatar Suporte</a></li>
+                        <li><a href="https://community.spotify.com" target="_blank">Comunidade</a></li>
+                        <li><a href="https://www.spotify.com/legal/" target="_blank">Termos de Uso</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Sobre Este Site</h4>
+                    <p>Este é um guia não oficial para ajudar usuários a cancelar suas assinaturas do Spotify de forma simples e clara.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Guia de Cancelamento Spotify. Este site não é afiliado ao Spotify.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de Confirmação -->
+    <div id="confirmModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4>Feedback Enviado!</h4>
+                <button class="modal-close" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Obrigado pelo seu feedback. Suas informações nos ajudam a melhorar nossos serviços.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" onclick="closeModal()">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
